@@ -4,8 +4,10 @@ import json
 import os
 
 # Configuration
-VIDEO_PATH = "../data/raw/video1.mp4"  # adjust per video
-OUTPUT_DIR = "../data/keypoints/video1"
+VIDEO_PATH = "data/raw/Video-1.mp4"
+OUTPUT_DIR = "data/keypoints/Video-1"
+TARGET_RESOLUTION = (1280, 720)
+FRAME_SKIP = 1 
 
 # Ensure output directory exists
 os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -18,6 +20,21 @@ pose = mp_pose.Pose(static_image_mode=False,
                     min_detection_confidence=0.5,
                     min_tracking_confidence=0.5)
 
+
+def preprocess_frame(frame, target_resolution):
+    """
+    Resize and normalize the frame.
+    Args:
+        frame: BGR image from OpenCV.
+        target_resolution: (width, height) tuple.
+    Returns:
+        preprocessed BGR frame.
+    """
+    # Resize frame
+    frame_resized = cv2.resize(frame, target_resolution)
+    # (Optional) Additional steps: denoising, stabilization, color adjustments
+    return frame_resized
+
 # Open video file
 cap = cv2.VideoCapture(VIDEO_PATH)
 frame_idx = 0
@@ -27,8 +44,16 @@ while cap.isOpened():
     if not success:
         break
 
+    # Optionally skip frames to speed up processing
+    if frame_idx % FRAME_SKIP != 0:
+        frame_idx += 1
+        continue
+
+    # Preprocess (resize) frame
+    frame_proc = preprocess_frame(frame, TARGET_RESOLUTION)
+
     # Convert BGR to RGB
-    image_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+    image_rgb = cv2.cvtColor(frame_proc, cv2.COLOR_BGR2RGB)
     results = pose.process(image_rgb)
 
     # Prepare keypoints dictionary
@@ -51,4 +76,4 @@ while cap.isOpened():
 
 cap.release()
 pose.close()
-print(f"Extracted pose for {frame_idx} frames.")
+print(f"Extracted pose for {frame_idx} frames at resolution {TARGET_RESOLUTION}.")
