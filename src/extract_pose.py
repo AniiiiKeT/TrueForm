@@ -4,22 +4,19 @@ import json
 import os
 
 # Configuration
-VIDEO_PATH = "data/raw/Video-1.mp4"
-OUTPUT_DIR = "data/keypoints/Video-1"
+VIDEO_PATH = "data/raw/Video-2.mp4"
+OUTPUT_DIR = "data/keypoints/Video-2"
 TARGET_RESOLUTION = (1280, 720)
 FRAME_SKIP = 1 
-
-# Ensure output directory exists
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# Initialize MediaPipe Pose
+# Initializing the MediaPipe Pose solution
 mp_pose = mp.solutions.pose
 pose = mp_pose.Pose(static_image_mode=False,
                     model_complexity=1,
                     enable_segmentation=False,
                     min_detection_confidence=0.5,
                     min_tracking_confidence=0.5)
-
 
 def preprocess_frame(frame, target_resolution):
     """
@@ -30,9 +27,8 @@ def preprocess_frame(frame, target_resolution):
     Returns:
         preprocessed BGR frame.
     """
-    # Resize frame
+
     frame_resized = cv2.resize(frame, target_resolution)
-    # (Optional) Additional steps: denoising, stabilization, color adjustments
     return frame_resized
 
 # Open video file
