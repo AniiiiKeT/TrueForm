@@ -58,7 +58,7 @@ def preprocess_video(
             frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
             # Normalize to [0,1]
-            frame = frame.astype(np.float32) / 255.0
+            # frame = frame.astype(np.float32) / 255.0  #Might cause problems with certain models
 
             processed_frames.append(frame)
 
@@ -93,8 +93,8 @@ def save_processed_video(
 
     # Convert normalized floats back to uint8 BGR
     # (VideoWriter expects BGR)
-    frames_uint8 = (frames * 255.0).clip(0, 255).astype(np.uint8)
-    frames_bgr = [cv2.cvtColor(f, cv2.COLOR_RGB2BGR) for f in frames_uint8]
+    # frames_uint8 = (frames * 255.0).clip(0, 255).astype(np.uint8)
+    frames_bgr = [cv2.cvtColor(f, cv2.COLOR_RGB2BGR) for f in frames]
 
     # Set up writer
     fourcc = cv2.VideoWriter_fourcc(*codec)
