@@ -28,6 +28,7 @@ class VideoAnnotator():
     def __init__(self, video_path, output_path, landmarks, metrics):
         self.video_path = video_path
         self.output_path = output_path
+        self.output_file_name = os.path.join(output_path, "annotated_" + os.path.basename(video_path))
         self.landmarks = landmarks
         self.metrics = metrics
 
@@ -108,7 +109,7 @@ class VideoAnnotator():
         W = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
         H = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
         fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-        out = cv2.VideoWriter(self.output_path, fourcc, fps, (W, H))
+        out = cv2.VideoWriter(self.output_file_name, fourcc, fps, (W, H))
 
         # Precompute some per-shot diagnostics (more could be added)
         diagnostics = {}  # shot_idx -> dict
@@ -285,7 +286,7 @@ if __name__ == "__main__":
     from shot_metrics import ShotMetrics
 
     video_path = "D:/Projects/TrueForm/data/raw/video_0.mp4"
-    output_path = "D:/Projects/TrueForm/outputs/video_0_annotated.mp4"
+    output_path = "D:/Projects/TrueForm/outputs"
 
     keypoint_extractor = KeypointExtractor(video_path, output_path)
     landmarks = keypoint_extractor.extractor()

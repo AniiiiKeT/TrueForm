@@ -23,5 +23,5 @@ class Main():
         video_annotator.annotate()
         print("Done!")
 
-main = Main("D:/Projects/TrueForm/data/raw/video_0.mp4", "D:/Projects/TrueForm/outputs")
+main = Main("D:/Projects/TrueForm/data/raw/video_1.mp4", "D:/Projects/TrueForm/outputs")
 main.run()
