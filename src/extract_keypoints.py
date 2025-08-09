@@ -27,7 +27,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 class KeypointExtractor:
-    def __init__(self, video_path, output_path, save_keypoints=False):
+    def __init__(self, video_path, output_path, save_keypoints=False, save_media=False):
         self.base_options = python.BaseOptions(model_asset_path='models/pose_landmarker_heavy.task')
         self.VisionRunningMode = mp.tasks.vision.RunningMode
         self.options = vision.PoseLandmarkerOptions(
@@ -43,7 +43,9 @@ class KeypointExtractor:
         self.video_path = video_path
         self.output_path = output_path
         self.file_name = os.path.splitext(os.path.basename(self.video_path))[0]
+
         self.save_keypoints = save_keypoints
+        self.save_media = save_media
 
     def draw_landmarks_on_image(self, rgb_image, detection_result):
         pose_landmarks_list = detection_result.pose_landmarks
@@ -78,8 +80,9 @@ class KeypointExtractor:
         logger.info(f"Video properties: {fps:.2f} FPS, {width}x{height}")
 
         fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-        output_file = os.path.join(self.output_path, self.file_name + ".mp4")
-        out = cv2.VideoWriter(output_file, fourcc, fps, (width, height))
+        if self.save_media:
+            self.output_file = os.path.join(self.output_path, self.file_name + ".mp4")
+            self.out = cv2.VideoWriter(self.output_file, fourcc, fps, (width, height))
 
         keypoints = []
         frame_idx = 0
@@ -106,20 +109,22 @@ class KeypointExtractor:
 
             annotated_rgb = self.draw_landmarks_on_image(frame_rgb, result)
             annotated_bgr = cv2.cvtColor(annotated_rgb, cv2.COLOR_RGB2BGR)
-            out.write(annotated_bgr)
+            if self.save_media:
+                self.out.write(annotated_bgr)
 
             if frame_idx % 50 == 0:
                 logger.info(f"Processed {frame_idx} frames...")
 
         cap.release()
-        out.release()
+        if self.save_media:
+            self.out.release()
+            logger.info(f"Saved landmarked video to {self.output_file}")
+
         cv2.destroyAllWindows()
 
-        logger.info(f"Saved annotated video to {output_file}")
-
-        kp_array = None
+        kp_array = np.stack(keypoints, axis=0)
         if self.save_keypoints and keypoints:
-            kp_array = np.stack(keypoints, axis=0)
+            
             os.makedirs("data/keypoints", exist_ok=True)
             np.save(f"data/keypoints/{self.file_name}_landmarks.npy", kp_array)
             logger.info(f"Saved landmarks array to data/keypoints/{self.file_name}_landmarks.npy")
