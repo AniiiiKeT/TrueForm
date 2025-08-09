@@ -266,7 +266,7 @@ class VideoAnnotator():
                 draw_text_box(annotated, suggestions, origin=(10,30))
 
                 # Draw shot label/metadata
-                cv2.putText(annotated, f"Shot {shot_idx} Frame {frame_idx}", (10, H-20),
+                cv2.putText(annotated, f"Frame {frame_idx}", (10, H-20),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255,255,255), 2, cv2.LINE_AA)
 
             # Optionally draw frame index

@@ -23,5 +23,14 @@ class Main():
         video_annotator.annotate()
         print("Done!")
 
-main = Main("D:/Projects/TrueForm/data/raw/video_1.mp4", "D:/Projects/TrueForm/outputs")
-main.run()
+
+for files in os.listdir("data/raw"):
+    if files.endswith(".mp4"):
+        video_path = os.path.join("data/raw", files)
+        output_path = "outputs"
+
+        main = Main(video_path, output_path)
+
+        print(f"Processing video: {os.path.basename(video_path)}")
+        main.run()
+

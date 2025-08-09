@@ -1,0 +1,112 @@
+2025-08-09 23:20:15,398 [INFO] Opening video file: data/raw\video_0.mp4
+2025-08-09 23:20:15,403 [INFO] Video properties: 30.00 FPS, 270x480
+2025-08-09 23:20:19,643 [INFO] Processed 50 frames...
+2025-08-09 23:20:24,470 [INFO] Processed 100 frames...
+2025-08-09 23:20:28,764 [INFO] Processed 150 frames...
+2025-08-09 23:20:32,912 [INFO] Processed 200 frames...
+2025-08-09 23:20:37,222 [INFO] Processed 250 frames...
+2025-08-09 23:20:41,434 [INFO] Processed 300 frames...
+2025-08-09 23:20:42,613 [WARNING] No pose landmarks detected in frame 314
+2025-08-09 23:20:43,080 [WARNING] No pose landmarks detected in frame 319
+2025-08-09 23:20:43,098 [WARNING] No pose landmarks detected in frame 320
+2025-08-09 23:20:43,117 [WARNING] No pose landmarks detected in frame 321
+2025-08-09 23:20:43,136 [WARNING] No pose landmarks detected in frame 322
+2025-08-09 23:20:43,154 [WARNING] No pose landmarks detected in frame 323
+2025-08-09 23:20:43,174 [WARNING] No pose landmarks detected in frame 324
+2025-08-09 23:20:43,198 [WARNING] No pose landmarks detected in frame 325
+2025-08-09 23:20:43,217 [WARNING] No pose landmarks detected in frame 326
+2025-08-09 23:20:43,238 [WARNING] No pose landmarks detected in frame 327
+2025-08-09 23:20:43,257 [WARNING] No pose landmarks detected in frame 328
+2025-08-09 23:20:43,276 [WARNING] No pose landmarks detected in frame 329
+2025-08-09 23:20:43,295 [WARNING] No pose landmarks detected in frame 330
+2025-08-09 23:20:43,313 [WARNING] No pose landmarks detected in frame 331
+2025-08-09 23:20:43,333 [WARNING] No pose landmarks detected in frame 332
+2025-08-09 23:20:43,351 [WARNING] No pose landmarks detected in frame 333
+2025-08-09 23:20:43,370 [WARNING] No pose landmarks detected in frame 334
+2025-08-09 23:20:43,389 [WARNING] No pose landmarks detected in frame 335
+2025-08-09 23:20:43,409 [WARNING] No pose landmarks detected in frame 336
+2025-08-09 23:20:43,427 [WARNING] No pose landmarks detected in frame 337
+2025-08-09 23:20:43,610 [WARNING] No pose landmarks detected in frame 339
+2025-08-09 23:20:43,628 [WARNING] No pose landmarks detected in frame 340
+2025-08-09 23:20:43,648 [WARNING] No pose landmarks detected in frame 341
+2025-08-09 23:20:43,666 [WARNING] No pose landmarks detected in frame 342
+2025-08-09 23:20:43,684 [WARNING] No pose landmarks detected in frame 343
+2025-08-09 23:20:43,708 [WARNING] No pose landmarks detected in frame 344
+2025-08-09 23:20:43,728 [WARNING] No pose landmarks detected in frame 345
+2025-08-09 23:20:43,746 [WARNING] No pose landmarks detected in frame 346
+2025-08-09 23:20:43,766 [WARNING] No pose landmarks detected in frame 347
+2025-08-09 23:20:43,785 [WARNING] No pose landmarks detected in frame 348
+2025-08-09 23:20:43,804 [WARNING] No pose landmarks detected in frame 349
+2025-08-09 23:20:43,823 [WARNING] No pose landmarks detected in frame 350
+2025-08-09 23:20:43,841 [WARNING] No pose landmarks detected in frame 351
+2025-08-09 23:20:43,860 [WARNING] No pose landmarks detected in frame 352
+2025-08-09 23:20:47,843 [INFO] Processed 400 frames...
+2025-08-09 23:20:48,620 [INFO] End of video reached.
+2025-08-09 23:20:48,627 [INFO] Saved landmarks array to data/keypoints/video_0_landmarks.npy
+2025-08-09 23:20:48,639 [INFO] Detected 2 shots at frames [ 74 291]
+2025-08-09 23:20:48,639 [INFO] Detected 2 shots at frames [293 368]
+2025-08-09 23:20:48,646 [INFO] Saved shot metrics to data/metrics/video_0_shot_metrics.csv
+2025-08-09 23:20:49,186 [INFO] Saved annotated video to: outputs
+2025-08-09 23:20:49,438 [INFO] Opening video file: data/raw\video_1.mp4
+2025-08-09 23:20:49,442 [INFO] Video properties: 30.00 FPS, 360x480
+2025-08-09 23:20:53,678 [INFO] Processed 50 frames...
+2025-08-09 23:20:57,817 [INFO] Processed 100 frames...
+2025-08-09 23:21:01,893 [INFO] Processed 150 frames...
+2025-08-09 23:21:06,003 [INFO] Processed 200 frames...
+2025-08-09 23:21:10,071 [INFO] Processed 250 frames...
+2025-08-09 23:21:14,124 [INFO] Processed 300 frames...
+2025-08-09 23:21:15,118 [INFO] End of video reached.
+2025-08-09 23:21:15,123 [INFO] Saved landmarks array to data/keypoints/video_1_landmarks.npy
+2025-08-09 23:21:15,132 [INFO] Detected 4 shots at frames [ 29 102 174 250]
+2025-08-09 23:21:15,132 [INFO] Detected 1 shots at frames [65]
+2025-08-09 23:21:15,136 [INFO] Saved shot metrics to data/metrics/video_1_shot_metrics.csv
+2025-08-09 23:21:15,790 [INFO] Saved annotated video to: outputs
+2025-08-09 23:21:16,032 [INFO] Opening video file: data/raw\video_2.mp4
+2025-08-09 23:21:16,035 [INFO] Video properties: 30.00 FPS, 480x270
+2025-08-09 23:21:18,234 [WARNING] No pose landmarks detected in frame 26
+2025-08-09 23:21:20,208 [INFO] Processed 50 frames...
+2025-08-09 23:21:24,270 [INFO] Processed 100 frames...
+2025-08-09 23:21:28,343 [INFO] Processed 150 frames...
+2025-08-09 23:21:32,390 [INFO] Processed 200 frames...
+2025-08-09 23:21:36,424 [INFO] Processed 250 frames...
+2025-08-09 23:21:37,172 [INFO] End of video reached.
+2025-08-09 23:21:37,176 [INFO] Saved landmarks array to data/keypoints/video_2_landmarks.npy
+2025-08-09 23:21:37,184 [INFO] Detected 3 shots at frames [ 80 150 235]
+2025-08-09 23:21:37,184 [INFO] Detected 1 shots at frames [57]
+2025-08-09 23:21:37,188 [INFO] Saved shot metrics to data/metrics/video_2_shot_metrics.csv
+2025-08-09 23:21:37,543 [INFO] Saved annotated video to: outputs
+2025-08-09 23:21:37,784 [INFO] Opening video file: data/raw\video_3.mp4
+2025-08-09 23:21:37,787 [INFO] Video properties: 30.00 FPS, 480x270
+2025-08-09 23:21:41,893 [INFO] Processed 50 frames...
+2025-08-09 23:21:45,937 [INFO] Processed 100 frames...
+2025-08-09 23:21:49,975 [INFO] Processed 150 frames...
+2025-08-09 23:21:54,036 [INFO] Processed 200 frames...
+2025-08-09 23:21:58,061 [INFO] Processed 250 frames...
+2025-08-09 23:22:00,543 [INFO] End of video reached.
+2025-08-09 23:22:00,547 [INFO] Saved landmarks array to data/keypoints/video_3_landmarks.npy
+2025-08-09 23:22:00,556 [INFO] Detected 4 shots at frames [ 42 103 197 259]
+2025-08-09 23:22:00,556 [INFO] Detected 1 shots at frames [144]
+2025-08-09 23:22:00,562 [INFO] Saved shot metrics to data/metrics/video_3_shot_metrics.csv
+2025-08-09 23:22:00,982 [INFO] Saved annotated video to: outputs
+2025-08-09 23:22:01,237 [INFO] Opening video file: data/raw\video_4.mp4
+2025-08-09 23:22:01,240 [INFO] Video properties: 30.00 FPS, 270x480
+2025-08-09 23:22:05,384 [INFO] Processed 50 frames...
+2025-08-09 23:22:06,207 [WARNING] No pose landmarks detected in frame 60
+2025-08-09 23:22:06,386 [WARNING] No pose landmarks detected in frame 62
+2025-08-09 23:22:06,644 [WARNING] No pose landmarks detected in frame 65
+2025-08-09 23:22:06,741 [WARNING] No pose landmarks detected in frame 66
+2025-08-09 23:22:06,998 [WARNING] No pose landmarks detected in frame 69
+2025-08-09 23:22:09,455 [WARNING] No pose landmarks detected in frame 99
+2025-08-09 23:22:09,559 [INFO] Processed 100 frames...
+2025-08-09 23:22:13,605 [INFO] Processed 150 frames...
+2025-08-09 23:22:15,579 [WARNING] No pose landmarks detected in frame 174
+2025-08-09 23:22:15,685 [WARNING] No pose landmarks detected in frame 175
+2025-08-09 23:22:16,174 [WARNING] No pose landmarks detected in frame 181
+2025-08-09 23:22:16,921 [WARNING] No pose landmarks detected in frame 190
+2025-08-09 23:22:17,753 [WARNING] No pose landmarks detected in frame 200
+2025-08-09 23:22:18,338 [WARNING] No pose landmarks detected in frame 207
+2025-08-09 23:22:21,848 [INFO] Processed 250 frames...
+2025-08-09 23:22:24,613 [INFO] End of video reached.
+2025-08-09 23:22:24,616 [INFO] Saved landmarks array to data/keypoints/video_4_landmarks.npy
+2025-08-09 23:22:24,627 [INFO] Detected 0 shots at frames []
+2025-08-09 23:22:24,627 [INFO] Detected 3 shots at frames [ 56 171 232]
