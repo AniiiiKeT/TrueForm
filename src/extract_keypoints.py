@@ -26,7 +26,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-class KeypointExtractor:
+class KeypointExtractor():
     def __init__(self, video_path, output_path, save_keypoints=False, save_media=False):
         self.base_options = python.BaseOptions(model_asset_path='models/pose_landmarker_heavy.task')
         self.VisionRunningMode = mp.tasks.vision.RunningMode
@@ -46,6 +46,7 @@ class KeypointExtractor:
 
         self.save_keypoints = save_keypoints
         self.save_media = save_media
+        self.fps = None
 
     def draw_landmarks_on_image(self, rgb_image, detection_result):
         pose_landmarks_list = detection_result.pose_landmarks
@@ -74,6 +75,8 @@ class KeypointExtractor:
             raise RuntimeError(f"Could not open video file: {self.video_path}")
 
         fps = cap.get(cv2.CAP_PROP_FPS) or 30.0
+        self.fps = fps
+        
         width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
         height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
@@ -135,7 +138,7 @@ if __name__ == "__main__":
     video_path = "D:/Projects/TrueForm/data/raw/video_0.mp4"
     output_path = "D:/Projects/TrueForm/outputs"
 
-    extractor = KeypointExtractor(video_path, output_path, save_keypoints=True)
+    extractor = KeypointExtractor(video_path, output_path, save_keypoints=False)
     keypoints = extractor.extractor()
 
     if keypoints is not None:

@@ -257,3 +257,104 @@
 2025-08-09 18:20:59,747 [INFO] Video properties: 30.00 FPS, 270x480
 2025-08-09 18:23:05,970 [INFO] Opening video file: D:/Projects/TrueForm/data/raw/video_0.mp4
 2025-08-09 18:23:05,975 [INFO] Video properties: 30.00 FPS, 270x480
+2025-08-09 22:40:02,246 [INFO] Opening video file: D:/Projects/TrueForm/data/raw/video_0.mp4
+2025-08-09 22:40:02,251 [INFO] Video properties: 30.00 FPS, 270x480
+2025-08-09 22:40:06,300 [INFO] Processed 50 frames...
+2025-08-09 22:40:10,225 [INFO] Processed 100 frames...
+2025-08-09 22:44:30,401 [INFO] Opening video file: D:/Projects/TrueForm/data/raw/video_0.mp4
+2025-08-09 22:44:30,406 [INFO] Video properties: 30.00 FPS, 270x480
+2025-08-09 22:44:34,474 [INFO] Processed 50 frames...
+2025-08-09 22:44:38,500 [INFO] Processed 100 frames...
+2025-08-09 22:44:42,500 [INFO] Processed 150 frames...
+2025-08-09 22:44:46,487 [INFO] Processed 200 frames...
+2025-08-09 22:44:50,477 [INFO] Processed 250 frames...
+2025-08-09 22:44:54,454 [INFO] Processed 300 frames...
+2025-08-09 22:44:55,606 [WARNING] No pose landmarks detected in frame 314
+2025-08-09 22:44:56,027 [WARNING] No pose landmarks detected in frame 319
+2025-08-09 22:44:56,045 [WARNING] No pose landmarks detected in frame 320
+2025-08-09 22:44:56,064 [WARNING] No pose landmarks detected in frame 321
+2025-08-09 22:44:56,083 [WARNING] No pose landmarks detected in frame 322
+2025-08-09 22:44:56,103 [WARNING] No pose landmarks detected in frame 323
+2025-08-09 22:44:56,121 [WARNING] No pose landmarks detected in frame 324
+2025-08-09 22:44:56,141 [WARNING] No pose landmarks detected in frame 325
+2025-08-09 22:44:56,160 [WARNING] No pose landmarks detected in frame 326
+2025-08-09 22:44:56,178 [WARNING] No pose landmarks detected in frame 327
+2025-08-09 22:44:56,197 [WARNING] No pose landmarks detected in frame 328
+2025-08-09 22:44:56,215 [WARNING] No pose landmarks detected in frame 329
+2025-08-09 22:44:56,234 [WARNING] No pose landmarks detected in frame 330
+2025-08-09 22:44:56,255 [WARNING] No pose landmarks detected in frame 331
+2025-08-09 22:44:56,273 [WARNING] No pose landmarks detected in frame 332
+2025-08-09 22:44:56,291 [WARNING] No pose landmarks detected in frame 333
+2025-08-09 22:44:56,310 [WARNING] No pose landmarks detected in frame 334
+2025-08-09 22:44:56,329 [WARNING] No pose landmarks detected in frame 335
+2025-08-09 22:44:56,348 [WARNING] No pose landmarks detected in frame 336
+2025-08-09 22:44:56,368 [WARNING] No pose landmarks detected in frame 337
+2025-08-09 22:44:56,546 [WARNING] No pose landmarks detected in frame 339
+2025-08-09 22:44:56,565 [WARNING] No pose landmarks detected in frame 340
+2025-08-09 22:44:56,585 [WARNING] No pose landmarks detected in frame 341
+2025-08-09 22:44:56,603 [WARNING] No pose landmarks detected in frame 342
+2025-08-09 22:44:56,623 [WARNING] No pose landmarks detected in frame 343
+2025-08-09 22:44:56,643 [WARNING] No pose landmarks detected in frame 344
+2025-08-09 22:44:56,661 [WARNING] No pose landmarks detected in frame 345
+2025-08-09 22:44:56,680 [WARNING] No pose landmarks detected in frame 346
+2025-08-09 22:44:56,698 [WARNING] No pose landmarks detected in frame 347
+2025-08-09 22:44:56,720 [WARNING] No pose landmarks detected in frame 348
+2025-08-09 22:44:56,738 [WARNING] No pose landmarks detected in frame 349
+2025-08-09 22:44:56,756 [WARNING] No pose landmarks detected in frame 350
+2025-08-09 22:44:56,775 [WARNING] No pose landmarks detected in frame 351
+2025-08-09 22:44:56,794 [WARNING] No pose landmarks detected in frame 352
+2025-08-09 22:45:00,648 [INFO] Processed 400 frames...
+2025-08-09 22:45:01,377 [INFO] End of video reached.
+2025-08-09 22:45:01,385 [INFO] Saved landmarks array to data/keypoints/video_0_landmarks.npy
+2025-08-09 22:45:01,397 [INFO] Detected 2 shots at frames [ 74 291]
+2025-08-09 22:45:01,398 [INFO] Detected 2 shots at frames [293 368]
+2025-08-09 22:45:01,405 [INFO] Saved shot metrics to data/metrics/video_0_shot_metrics.csv
+2025-08-09 22:45:31,890 [INFO] Opening video file: D:/Projects/TrueForm/data/raw/video_0.mp4
+2025-08-09 22:45:31,895 [INFO] Video properties: 30.00 FPS, 270x480
+2025-08-09 22:45:35,891 [INFO] Processed 50 frames...
+2025-08-09 22:45:39,819 [INFO] Processed 100 frames...
+2025-08-09 22:45:43,747 [INFO] Processed 150 frames...
+2025-08-09 22:45:47,667 [INFO] Processed 200 frames...
+2025-08-09 22:45:51,639 [INFO] Processed 250 frames...
+2025-08-09 22:45:55,616 [INFO] Processed 300 frames...
+2025-08-09 22:45:56,762 [WARNING] No pose landmarks detected in frame 314
+2025-08-09 22:45:57,177 [WARNING] No pose landmarks detected in frame 319
+2025-08-09 22:45:57,195 [WARNING] No pose landmarks detected in frame 320
+2025-08-09 22:45:57,216 [WARNING] No pose landmarks detected in frame 321
+2025-08-09 22:45:57,235 [WARNING] No pose landmarks detected in frame 322
+2025-08-09 22:45:57,255 [WARNING] No pose landmarks detected in frame 323
+2025-08-09 22:45:57,274 [WARNING] No pose landmarks detected in frame 324
+2025-08-09 22:45:57,293 [WARNING] No pose landmarks detected in frame 325
+2025-08-09 22:45:57,312 [WARNING] No pose landmarks detected in frame 326
+2025-08-09 22:45:57,330 [WARNING] No pose landmarks detected in frame 327
+2025-08-09 22:45:57,348 [WARNING] No pose landmarks detected in frame 328
+2025-08-09 22:45:57,367 [WARNING] No pose landmarks detected in frame 329
+2025-08-09 22:45:57,386 [WARNING] No pose landmarks detected in frame 330
+2025-08-09 22:45:57,406 [WARNING] No pose landmarks detected in frame 331
+2025-08-09 22:45:57,424 [WARNING] No pose landmarks detected in frame 332
+2025-08-09 22:45:57,444 [WARNING] No pose landmarks detected in frame 333
+2025-08-09 22:45:57,463 [WARNING] No pose landmarks detected in frame 334
+2025-08-09 22:45:57,482 [WARNING] No pose landmarks detected in frame 335
+2025-08-09 22:45:57,500 [WARNING] No pose landmarks detected in frame 336
+2025-08-09 22:45:57,519 [WARNING] No pose landmarks detected in frame 337
+2025-08-09 22:45:57,695 [WARNING] No pose landmarks detected in frame 339
+2025-08-09 22:45:57,714 [WARNING] No pose landmarks detected in frame 340
+2025-08-09 22:45:57,732 [WARNING] No pose landmarks detected in frame 341
+2025-08-09 22:45:57,750 [WARNING] No pose landmarks detected in frame 342
+2025-08-09 22:45:57,769 [WARNING] No pose landmarks detected in frame 343
+2025-08-09 22:45:57,789 [WARNING] No pose landmarks detected in frame 344
+2025-08-09 22:45:57,808 [WARNING] No pose landmarks detected in frame 345
+2025-08-09 22:45:57,826 [WARNING] No pose landmarks detected in frame 346
+2025-08-09 22:45:57,846 [WARNING] No pose landmarks detected in frame 347
+2025-08-09 22:45:57,864 [WARNING] No pose landmarks detected in frame 348
+2025-08-09 22:45:57,884 [WARNING] No pose landmarks detected in frame 349
+2025-08-09 22:45:57,903 [WARNING] No pose landmarks detected in frame 350
+2025-08-09 22:45:57,921 [WARNING] No pose landmarks detected in frame 351
+2025-08-09 22:45:57,940 [WARNING] No pose landmarks detected in frame 352
+2025-08-09 22:46:01,768 [INFO] Processed 400 frames...
+2025-08-09 22:46:02,504 [INFO] End of video reached.
+2025-08-09 22:46:02,511 [INFO] Saved landmarks array to data/keypoints/video_0_landmarks.npy
+2025-08-09 22:46:02,523 [INFO] Detected 2 shots at frames [ 74 291]
+2025-08-09 22:46:02,524 [INFO] Detected 2 shots at frames [293 368]
+2025-08-09 22:46:02,530 [INFO] Saved shot metrics to data/metrics/video_0_shot_metrics.csv
+2025-08-09 22:46:02,715 [INFO] Saved annotated video to: D:/Projects/TrueForm/outputs
