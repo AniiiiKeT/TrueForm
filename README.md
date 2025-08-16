@@ -163,19 +163,12 @@ This repository is licensed under the MIT license (see `LICENSE`).
 
 ---
 
-## 11. TODO / next steps for the repo owner
+## 11. TODO
 
-I created a pragmatic, editable documentation scaffold. To complete it, please do the following:
 
 * [ ] Provide exact script names and example command-lines in section **5**.
 * [ ] Add short descriptions for each `src/` file (function-level docstrings help here).
 * [ ] Add a `models/README.md` describing model artifact format and how to reproduce them.
 * [ ] Add a `CONTRIBUTING.md` and tests (optional but recommended).
-* [ ] If you want, I can open a PR that replaces the repo's `README.md` with an expanded README based on this document.
 
 ---
-
-* Convert this document into an improved `README.md` and open a PR.
-* Generate a `CONTRIBUTING.md`, `models/README.md` and example CLI scripts filled with the actual script names if you want me to inspect `src/` and `notebooks/` more deeply.
-
-(If you want me to create the README/PR, tell me — I already inspected the repo root and basic structure.)
